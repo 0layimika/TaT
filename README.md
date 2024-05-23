@@ -19,7 +19,7 @@ The API project has the following folder structure. It is important to know this
   - `Post.js`: This is the schema of the "Posts" table of the database
   
 
-## `manage.py`
+<!-- ## `manage.py`
 The `manage.py` file is the main entry point and it holds all the command to be performed on the server. It initializes the sqlite3 connection and starts the HTTP server.
 
 ## `views.py`
@@ -35,4 +35,4 @@ The `models.py` folder defines the data structure for a Person and provides data
 
 ## Conclusion
 
-This documentation provides an overview of the structure and key components of the API. For more detailed information on each component and their functions, refer to the corresponding source code files in the repository.
+This documentation provides an overview of the structure and key components of the API. For more detailed information on each component and their functions, refer to the corresponding source code files in the repository. -->
