@@ -16,8 +16,15 @@ The API project has the following folder structure. It is important to know this
 - `middleware`
   - `auth.js`: this is the middleware that handles authentication and generates web token
 - `models`
-  - `Post.js`: This is the schema of the "Posts" table of the database
-  
+  - `Post.js`: This is the schema of the "Post" table of the database
+  - `Profile.js`: This is the schema of the "Profile" table of the database
+  - `User.js`: This is the schema of the "User" table of the database
+- `routes`
+  - `api`
+    - `auth.js`: This contains all the endpoints for authenticating a user i.e sign up and login
+    - `posts.js`: this contains all the endpoints for handling a post. Creating a new post, Deleting a post, Liking a post, removing like, aadding a comment, deleting a comment
+    - `profile.js`: this contains all the endpoints for handling profile. Creating profile for a user and adding and removing several details
+    - `users.js`: this contains the endpoint for creating a new user
 
 <!-- ## `manage.py`
 The `manage.py` file is the main entry point and it holds all the command to be performed on the server. It initializes the sqlite3 connection and starts the HTTP server.
