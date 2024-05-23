@@ -1,0 +1,6 @@
+{
+ "mongoURI":"mongodb+srv://Olayimika:0layimika@nodestuff.ctwid6h.mongodb.net/?retryWrites=true&w=majority&appName=Nodestuff",
+ "jwtSecret" :"secret token",
+ "clientId":"Iv23liN6XiPRO3tGHu04",
+ "clientSecret":"a75f9f638ac3f50652386693c8761435b7873aaf"
+}
