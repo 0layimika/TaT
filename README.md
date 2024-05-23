@@ -25,7 +25,11 @@ The API project has the following folder structure. It is important to know this
     - `posts.js`: this contains all the endpoints for handling a post. Creating a new post, Deleting a post, Liking a post, removing like, aadding a comment, deleting a comment
     - `profile.js`: this contains all the endpoints for handling profile. Creating profile for a user and adding and removing several details
     - `users.js`: this contains the endpoint for creating a new user
+- `package.json` : This file contains the scripts and list of dependencies
+- `server.js`: This is the main entry point of the program and it initiates the connection with the server
 
+## What the Model looks like
+### UserSchema: This creates the User table and defines user attribute
 <!-- ## `manage.py`
 The `manage.py` file is the main entry point and it holds all the command to be performed on the server. It initializes the sqlite3 connection and starts the HTTP server.
 
