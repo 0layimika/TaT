@@ -30,19 +30,70 @@ The API project has the following folder structure. It is important to know this
 
 ## What the Model looks like
 ### UserSchema: This creates the User table and defines user attribute
-<!-- ## `manage.py`
-The `manage.py` file is the main entry point and it holds all the command to be performed on the server. It initializes the sqlite3 connection and starts the HTTP server.
+#### User attribute and data type: 
+- `name`: String
+- `email`: String
+- `password`: String
+- `avatar`: String
+- `date`:Date
 
-## `views.py`
+### ProfileSchema: This creates the Profile table and defines Profile attribute
+#### Profile attribute and data type:
+- `User`: Object
+- `website`: String
+- `Location`: String
+- `company`: String
+- `status`: String
+- `website`: String
+- `skills`: Array[String]
+- `bio`: String
+- `githubusername`: String
+- `date`: Date
+- `social`: {
+  - `Instagram`: String
+  - `Twiter`: String
+  - `Youtube`: String
+  - `Linkedin`: String
+  - `Facebook` : String
+}
+- `Education` : [{
+  - `school`: String
+  - `degree`: String
+  - `fieldofstudy`: String
+  - `from`: Date
+  - `to`: Date
+  - `current`: Boolean
+  - `description`: String
+}]
+- `Experience` : [{
+  - `title`: String
+  - `company`: String
+  - `location`: String
+  - `from`: Date
+  - `to`: Date
+  - `current`: Boolean
+  - `description`: String
+}]
 
-The `views.py` folder contains HTTP request handler functions for managing Person resources. It includes functions for creating, retrieving, updating, and deleting Person objects.
+### PostSchema: This creates the Post table and defines Post attribute
+#### Post attribute and data type:
+<!-- user, text, avatar, name, likes, comments -->
+- `user`: Object
+- `text`: String
+- `avatar`: String
+- `name`: String
+- `date`: Date
+- `likes`:[{
+  - `user`: Object
+}]
+- `comments`:[{
+  - `user`: Object
+  - `text`: String
+  - `avatar`: String
+  - `name`: String
+  - `date`: Date
+}]
 
-- `person_list`: Creates a new Person.
-- `person_detail`: Retrieves a Person by id, updates an existing person and also deletes a person by id
-
-The `models.py` folder defines the data structure for a Person and provides database-related functionality.
-
-- `Person`: Represents a Person resource.
 
 ## Conclusion
 
