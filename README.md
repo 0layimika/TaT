@@ -9,7 +9,6 @@ To run the API locally, follow these steps:
 ## Running the API
 - Run the start command : npm run server
 ## Folder Structure
-
 The API project has the following folder structure. It is important to know this outlines only the vital files and folders responsible for the running of the API: 
 - `config`
   - `db.js`:handles the connection to the mongo database using mongoose
@@ -27,7 +26,6 @@ The API project has the following folder structure. It is important to know this
     - `users.js`: this contains the endpoint for creating a new user
 - `package.json` : This file contains the scripts and list of dependencies
 - `server.js`: This is the main entry point of the program and it initiates the connection with the server
-
 ## What the Model looks like
 ### UserSchema: This creates the User table and defines user attribute
 #### User attribute and data type: 
@@ -94,7 +92,29 @@ The API project has the following folder structure. It is important to know this
   - `date`: Date
 }]
 
+## Endpoints
+- `POST localhost:5000/api/users`: Register/Signin
+- `GET localhost:5000/api/auth`: get logged in user
+- `POST localhost:5000/api/auth`: Login
+- `GET localhost:5000/api/profile/me`: get profile of logged in user
+- `POST localhost:5000/api/profile`: create profile
+- `GET localhost:5000/api/profile`: get all profiles
+- `GET localhost:5000/api/profile/user/:user_id`: get specific profile by user id
+- `DELETE localhost:5000/api/profile`: delete user, profile and posts
+- `PUT localhost:5000/api/profile/experience`: Add experience field to profile
+- `DELETE localhost:5000/api/profile/experience/:exp_id`: Delete specific experience by ID
+- `PUT localhost:5000/api/profile/education`: Add education field to profile
+- `DELETE localhost:5000/api/profile/education/:edu_id`: Delete specific educatiion by ID
+- `GET localhost:5000/api/profile/github/:github_username`: Get latest 6 github repos
+- `POST localhost:5000/api/posts`: Create a new post
+- `GET localhost:5000/api/posts`: get all posts
+- `GET localhost:5000/api/posts/:post_id`: get specific post by id
+- `DELETE localhost:5000/api/posts/:post_id`: delete post
+- `PUT localhost:5000/api/posts/like/:post_id`: like a post
+- `PUT localhost:5000/api/posts/unlike/:post_id`: Remove like
+- `PUT localhost:5000/api/posts/comment/:post_id`: Add a comment
+- `PUT localhost:5000/api/posts/comment/:post_id/comment_id`: Delete specific comment
 
 ## Conclusion
 
-This documentation provides an overview of the structure and key components of the API. For more detailed information on each component and their functions, refer to the corresponding source code files in the repository. -->
+This documentation provides an overview of the structure and key components of the API. For more detailed information on each component and their functions, refer to the corresponding source code files in the repository.
